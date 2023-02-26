@@ -14,7 +14,7 @@ const SelectButton = () => {
     },
   ];
   return (
-    <ToggleButtonGroup type='radio' name='options' defaultValue={1} className='mt-7'>
+    <ToggleButtonGroup type='radio' name='options' defaultValue='1' className='mt-7'>
       {radios.map((radio, index) => (
         <ToggleButton
           key={index}
@@ -23,8 +23,7 @@ const SelectButton = () => {
           variant='outline-primary'
           name='radio'
           value={radio.value}
-          checked='true'
-          className='fw-bold rounded-0 px-4'
+          className='fw-bold px-4'
           onChange={(e) => setChecked(e.currentTarget.checked)}
         >
           {radio.value} День

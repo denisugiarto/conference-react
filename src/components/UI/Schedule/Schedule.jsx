@@ -16,7 +16,7 @@ const Schedule = () => {
   return (
     <Section className='bg-light' title='Программа мероприятий'>
       <SelectButton />
-      <TableSchedule dataTable={schedules} />
+      <TableSchedule schedulesList={schedules} />
     </Section>
   );
 };

@@ -15,7 +15,7 @@ const Pricing = () => {
   }, []);
   return (
     <Section title='Плата' className={pricingBg} titleClassName='text-white'>
-      <Row className='mt-7'>
+      <Row className='mt-7 row-cols-1 row-md-cols-2 row-cols-lg-4 g-3'>
         {pricingList.length > 1 &&
           pricingList.map((priceItem) => (
             <Col>
