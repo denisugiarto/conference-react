@@ -1,33 +1,65 @@
-import React, { useEffect, useState } from 'react';
-import { Table } from 'react-bootstrap';
-import { Clock, DashLg } from 'react-bootstrap-icons';
-import './TableSchedule.scss';
-import axios from 'axios';
+import axios from "axios";
+import React, { useEffect } from "react";
+import { Table } from "react-bootstrap";
+import { Clock, DashLg } from "react-bootstrap-icons";
+import "./TableSchedule.scss";
 
-const TableSchedule = ({dataTable}) => {
-  return (
-    <Table striped variant='white' className='mt-4'>
-      <tbody className='text-center'>
-        {dataTable.map((schedule) => (
-          <tr key={schedule.id}>
-            <td className='text-end'>
-              <Clock />
-            </td>
-            <td className='text-start'>
-              {schedule.startTime} - {schedule.endTime}
-            </td>
-            <td>
-              <DashLg />
-            </td>
-            <td className='fw-bold text-start'>
-              {schedule.title} <br />
-              {schedule.description}
-            </td>
-          </tr>
-        ))}
-      </tbody>
-    </Table>
-  );
+const TableSchedule = () => {
+	useEffect(() => {
+		const schedules = axios;
+	}, []);
+
+	return (
+		<Table
+			striped
+			hover
+			variant='primary'
+			className='mt-5'
+		>
+			<tbody className='text-center'>
+				<tr>
+					<td>
+						<Clock /> 9:30 - 10:00
+					</td>
+					<td>
+						<DashLg />
+					</td>
+					<td>
+						Регистрация <br />
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					</td>
+				</tr>
+				<tr>
+					<td>9:30 - 10:00</td>
+					<td>
+						<DashLg />
+					</td>
+					<td>
+						Регистрация <br />
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					</td>
+				</tr>
+				<tr>
+					<td>9:30 - 10:00</td>
+					<td>
+						<DashLg />
+					</td>
+					<td>
+						Регистрация <br />
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					</td>
+				</tr>
+				<tr>
+					<td>9:30 - 10:00</td>
+					<td>-</td>
+					<td>
+						Регистрация <br />
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					</td>
+				</tr>
+			</tbody>
+		</Table>
+	);
 };
 
 export default TableSchedule;

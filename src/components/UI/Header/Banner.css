@@ -1,0 +1,10 @@
+@media (min-width: 768px) {
+	.banner {
+		width: inherit;
+	}
+}
+@media (max-width: 768px) {
+	.banner {
+		width: inherit;
+	}
+}
