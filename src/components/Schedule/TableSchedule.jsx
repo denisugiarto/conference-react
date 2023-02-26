@@ -13,11 +13,11 @@ const TableSchedule = ({ schedulesList }) => {
     <Table striped hover borderless variant='white' className='mt-5'>
       <tbody>
         {schedulesList.map((schedule) => (
-          <tr>
+          <tr key={schedule.id}>
             <td className='text-end'>
               <Clock />
             </td>
-            <td >
+            <td>
               {schedule.startTime} - {schedule.endTime}
             </td>
             <td className='text-center'>

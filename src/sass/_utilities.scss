@@ -1,0 +1,13 @@
+$utilities: (
+  'font-size': (
+    responsive: true,
+    property: font-size,
+    class: fs,
+    values: $font-sizes,
+  ),
+  'position': (
+    responsive: true,
+    property: position,
+    values: static relative absolute fixed sticky,
+  ),
+);

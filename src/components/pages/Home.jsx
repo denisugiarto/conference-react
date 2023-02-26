@@ -1,9 +1,11 @@
 import React from 'react';
-import Header from '../UI/Header/Header';
-import Layout from '../layout/Layout';
 import useTitle from '../../hooks/useTitle';
-import Schedule from '../UI/Schedule/Schedule';
-import Pricing from '../UI/Pricing/Pricing';
+import Clients from '../Clients/Clients';
+import Contact from '../Contact/Contact';
+import Footer from '../Footer/Footer';
+import Layout from '../Layout/Layout';
+import Pricing from '../Pricing/Pricing';
+import Schedule from '../Schedule/Schedule';
 
 const Home = () => {
   useTitle('Home Page');
@@ -11,6 +13,9 @@ const Home = () => {
     <Layout>
       <Schedule />
       <Pricing />
+      <Contact />
+      <Clients />
+      <Footer />
     </Layout>
   );
 };
