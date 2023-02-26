@@ -5,12 +5,11 @@ const Time = () => {
 	return (
 		<>
 			<div
-				className='container-fluid py-2'
+				className='container-fluid'
 				style={{
 					backgroundImage: `url(${banner})`,
 					backgroundSize: "cover",
 					backgroundPosition: "center",
-					backgroundRepeat: "no-repeat",
 					minHeight: "405px",
 				}}
 			></div>

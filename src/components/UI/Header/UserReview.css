@@ -1,3 +1,8 @@
 .review {
 	background-color: #fff;
+	padding-bottom: 35px;
+}
+
+.slick-dots li button {
+	margin: 0px 0px;
 }
