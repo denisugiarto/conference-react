@@ -5,7 +5,7 @@ import "./Banner.css";
 const Banner = () => {
 	return (
 		<>
-			<div className='container'>
+			<div className='container-fluid'>
 				<img
 					src={banner}
 					alt=' '
