@@ -15,9 +15,9 @@ const Clients = () => {
 
   return (
     <Section title='Спонсоры' className='bg-light'>
-      <Row>
-        {clients.map((client) => (
-          <Col>
+      <Row className='mt-5'>
+        {clients.map((client, index) => (
+          <Col key={index}>
             <ClientCard dataClient={client} />
           </Col>
         ))}

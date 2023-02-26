@@ -3,7 +3,7 @@ import useTitle from '../../hooks/useTitle';
 import Clients from '../Clients/Clients';
 import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
-import Layout from '../Layout/Layout';
+import Layout from '../layout/Layout';
 import Pricing from '../Pricing/Pricing';
 import Schedule from '../Schedule/Schedule';
 
