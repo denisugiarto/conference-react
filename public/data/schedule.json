@@ -1,0 +1,39 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "startTime": "9:30",
+      "endTime": "10:00",
+      "title": "Регистрация",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "id": 2,
+      "startTime": "10:00",
+      "endTime": "11:15",
+      "title": "Brandon Fisher",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "id": 3,
+      "startTime": "11:15",
+      "endTime": "13:15",
+      "title": "Brandon Fisher",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "id": 4,
+      "startTime": "13:30",
+      "endTime": "14.30",
+      "title": "Lunch",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "id": 5,
+      "startTime": "14:35",
+      "endTime": "16.00",
+      "title": "Brandon Fisher",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    }
+  ]
+}
