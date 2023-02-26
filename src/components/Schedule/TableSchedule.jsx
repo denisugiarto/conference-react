@@ -10,7 +10,7 @@ const TableSchedule = ({ schedulesList }) => {
   }, []);
 
   return (
-    <Table striped hover borderless variant='white' className='mt-5'>
+    <Table striped hover borderless responsive variant='white' className='mt-5'>
       <tbody>
         {schedulesList.map((schedule) => (
           <tr key={schedule.id}>

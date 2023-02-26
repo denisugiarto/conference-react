@@ -15,7 +15,7 @@ const Clients = () => {
 
   return (
     <Section title='Спонсоры' className='bg-light'>
-      <Row className='mt-5'>
+      <Row className='mt-3 row-cols-1 row-cols-md-2 row-cols-xl-4 gy-3 justify-content-center'>
         {clients.map((client, index) => (
           <Col key={index}>
             <ClientCard dataClient={client} />
