@@ -1,12 +1,13 @@
+import axios from "axios";
 import React, { useEffect } from "react";
 import { Table } from "react-bootstrap";
 import { Clock, DashLg } from "react-bootstrap-icons";
 import "./TableSchedule.scss";
 
 const TableSchedule = () => {
-	// useEffect(() => {
-	// 	const schedules = axios;
-	// }, []);
+	useEffect(() => {
+		const schedules = axios;
+	}, []);
 
 	return (
 		<Table
