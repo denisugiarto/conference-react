@@ -65,6 +65,8 @@ const About = () => {
 					>
 						Подробно
 					</button>
+					<br />
+					<br />
 				</div>
 			</div>
 		</div>
