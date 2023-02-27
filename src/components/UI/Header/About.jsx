@@ -3,27 +3,26 @@ import pict from "../../../assets/pict.svg";
 
 const About = () => {
 	return (
-		<div className='container text-center mb-3'>
-			<h2
-				style={{
-					width: "310px",
-					marginLeft: "470px",
-					marginTop: "50px",
-					fontFamily: "Alegreya",
-				}}
-			>
-				О Симпозиуме
-			</h2>
+		<div className='container justify-content-center text-center mb-3'>
+			<div className='row justify-content-center'>
+				<h2
+					style={{
+						width: "310px",
+						marginTop: "50px",
+						fontFamily: "Alegreya",
+					}}
+				>
+					О Симпозиуме
+				</h2>
+			</div>
 
-			<div className='row align-items-start d-inline-flex'>
+			<div className='row justify-content-center d-flex'>
 				<div className='col'>
-					<p
+					<div
 						style={{
-							width: "570px",
 							height: "365px",
 							marginTop: "34px",
 							textAlign: "end",
-							marginLeft: "70px",
 						}}
 					>
 						Уважаемые коллеги! Ташкентский архитектурно-строительный институт,
@@ -36,9 +35,9 @@ const About = () => {
 						85-летнему юбилею известного ученого в области строительного
 						материаловедения проф. КАСИМОВА ИРКИНА УМАРАЛИЕВИЧА, который
 						состоится 27-28 ноября 2020 в г. Ташкенте
-					</p>
+					</div>
 				</div>
-				<div className='col'>
+				<div className='col text-start'>
 					<img
 						alt=' '
 						src={pict}
@@ -46,28 +45,28 @@ const About = () => {
 							width: "570px",
 							height: "365px",
 							marginTop: "34px",
-							marginRight: "60px",
 						}}
 					/>
 				</div>
-				<div className='col-4'>
-					<button
-						type='button'
-						className='btn btn-success'
-						style={{
-							width: "108px",
-							height: "22px",
-							fontFamily: "Lato",
-							fontWeight: "700",
-							marginLeft: "50px",
-							paddingBottom: "29px",
-						}}
-					>
-						Подробно
-					</button>
-					<br />
-					<br />
-				</div>
+			</div>
+
+			<div className='col-4'>
+				<button
+					type='button'
+					className='btn btn-success'
+					style={{
+						width: "108px",
+						height: "22px",
+						fontFamily: "Lato",
+						fontWeight: "700",
+						marginLeft: "50px",
+						paddingBottom: "29px",
+					}}
+				>
+					Подробно
+				</button>
+				<br />
+				<br />
 			</div>
 		</div>
 	);
