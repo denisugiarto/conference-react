@@ -6,3 +6,43 @@
 .slick-dots li button {
 	margin: 0px 0px;
 }
+
+.cardfirst {
+	width: 370px;
+	height: 150px;
+	box-shadow: 3px 2px 1px grey;
+}
+
+.images {
+	width: 100px;
+	height: 100px;
+	margin-left: 1px;
+}
+
+@media (max-width: 520px) {
+	.cardfirst {
+		width: 320px;
+		height: 50px;
+	}
+	.images {
+		width: 70px;
+		height: 70px;
+	}
+	.title {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 820px) {
+	.cardfirst {
+		width: 320px;
+		height: 50px;
+	}
+	.images {
+		width: 70px;
+		height: 70px;
+	}
+	.title {
+		font-size: 12px;
+	}
+}

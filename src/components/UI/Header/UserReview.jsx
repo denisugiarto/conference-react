@@ -66,52 +66,64 @@ const UserReview = () => {
 									delay: 2500,
 									disableOnInteraction: false,
 								}}
-								spaceBetween={20}
+								spaceBetween={7}
 								pagination={{
 									clickable: true,
 								}}
+								breakpoints={{
+									352: {
+										slidesPerView: 1,
+										spaceBetween: 15,
+									},
+									768: {
+										slidesPerView: 2,
+										spaceBetween: 15,
+									},
+									1320: {
+										slidesPerView: 3,
+									},
+								}}
 								modules={[Autoplay, Grid, Pagination]}
-								className='mySwiper'
-								style={{ height: "435px", width: "1200px" }}
+								className='mySwiper swipe-responsive'
+								style={{ height: "435px", width: "1480px" }}
 							>
 								{user.map((item) => (
 									<Col key={item.id}>
 										<SwiperSlide
 											key={item.id}
-											style={{ height: "calc((100% - 30px) / 2)" }}
+											style={{
+												height: "calc((100% - 100px) / 2)",
+											}}
 										>
-											<Card
-												className='d-flex text-start shadow'
-												style={{
-													width: "370px",
-													height: "170px",
-													boxShadow: "3px 2px 1px grey",
-												}}
-											>
-												<Card.Body className='d-flex text-start justify-content-evenly'>
-													<Card.Img
-														src={item.image}
-														className='mt-4'
-														alt=' '
-														style={{ width: "100px", height: "100px" }}
-													/>
-													<div className='d-inline py-4 m-2'>
+											<Card className='d-flex shadow cardfirst justify-content-start'>
+												<Card.Body className='d-flex text-start'>
+													<div>
+														<Card.Img
+															src={item.image}
+															className='images'
+															alt=' '
+														/>
+													</div>
+													<div className='d-inline-block'>
 														<Card.Title
 															style={{
 																fontFamily: "Alegreya",
 																fontWeight: "700",
 																fontSize: "24px",
 																lineHeight: "32.66px",
+																marginLeft: "15px",
 															}}
 														>
 															{item.first_name}&nbsp;{item.last_name}
 														</Card.Title>
 														<Card.Text
+															className='title'
 															style={{
 																fontFamily: "Lato",
 																fontWeight: "400",
 																fontSize: "18px",
 																lineHeight: "21.6px",
+																marginLeft: "15px",
 															}}
 														>
 															{item.desc}
