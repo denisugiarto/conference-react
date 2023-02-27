@@ -1,16 +1,14 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Grid, Pagination } from "swiper";
+import { Grid, Pagination, Autoplay } from "swiper";
 
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/grid";
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 import "./UserReview.css";
-import { Card, Carousel, Col, Row } from "react-bootstrap";
+import { Card, Col, Row } from "react-bootstrap";
 
 const UserReview = () => {
 	const [user, setUser] = useState([]);
@@ -32,51 +30,6 @@ const UserReview = () => {
 		getuser();
 	}, []);
 
-	// const settings = {
-	// 	dots: true,
-	// 	dotsClass: "slick-dots",
-	// 	infinite: true,
-	// 	speed: 500,
-	// 	slidesToShow: 3,
-	// 	slidesToScroll: 3,
-	// 	initialSlide: 0,
-	// 	appendDots: (dots) => (
-	// 		<div
-	// 			style={{
-	// 				padding: "1px",
-	// 				height: "15px",
-	// 			}}
-	// 			className='row'
-	// 		>
-	// 			<div className='col-12'>
-	// 				<ul style={{ margin: "0px" }}> {dots} </ul>
-	// 			</div>
-	// 		</div>
-	// 	),
-	// 	rows: 2,
-
-	// 	responsive: [
-	// 		{
-	// 			breakpoint: 1024,
-	// 			settings: {
-	// 				slidesToShow: 2,
-	// 				slidesToScroll: 2,
-	// 				infinite: true,
-	// 				dots: true,
-	// 			},
-	// 		},
-	// 		{
-	// 			breakpoint: 768,
-	// 			settings: {
-	// 				slidesToShow: 1,
-	// 				slidesToScroll: 1,
-	// 				infinite: true,
-	// 				dots: true,
-	// 			},
-	// 		},
-	// 	],
-	// };
-
 	return (
 		<>
 			<div className='review'>
@@ -97,29 +50,38 @@ const UserReview = () => {
 							Докладчики
 						</h2>
 						<br />
+
 						<Row
 							xs={1}
 							md={12}
 							className='g-4'
 						>
 							<Swiper
-								slidesPerView={6}
+								slidesPerView={3}
+								centeredSlides={false}
 								grid={{
 									rows: 2,
 								}}
-								spaceBetween={180}
+								autoplay={{
+									delay: 2500,
+									disableOnInteraction: false,
+								}}
+								spaceBetween={20}
 								pagination={{
 									clickable: true,
 								}}
-								modules={[Grid, Pagination]}
+								modules={[Autoplay, Grid, Pagination]}
 								className='mySwiper'
 								style={{ height: "435px", width: "1200px" }}
 							>
 								{user.map((item) => (
 									<Col key={item.id}>
-										<SwiperSlide key={item.id}>
+										<SwiperSlide
+											key={item.id}
+											style={{ height: "calc((100% - 30px) / 2)" }}
+										>
 											<Card
-												className='d-flex text-start'
+												className='d-flex text-start shadow'
 												style={{
 													width: "370px",
 													height: "170px",
