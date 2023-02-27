@@ -117,7 +117,7 @@ const UserReview = () => {
 							>
 								{user.map((item) => (
 									<Col key={item.id}>
-										<SwiperSlide>
+										<SwiperSlide key={item.id}>
 											<Card
 												className='d-flex text-start'
 												style={{
