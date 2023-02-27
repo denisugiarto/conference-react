@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Section from '../Section/Section';
+import Section from '../UI/Section/Section';
 import './Schedule.scss';
 import SelectButton from './SelectButton';
 import TableSchedule from './TableSchedule';
