@@ -9,7 +9,7 @@ const DetailContact = () => {
         <Col xs='auto'>
           <GeoAltFill className='text-primary' />
         </Col>
-        <Col className='fs-6 fw-bold'>
+        <Col className='fs-6 fw-bold text-break'>
           <p>Адрес:</p>
           <p>
             100084, г. Ташкент, ул. Кичик халка йули, 7, Ташкентский
@@ -21,7 +21,7 @@ const DetailContact = () => {
         <Col xs='auto'>
           <TelephoneFill className='text-primary' />
         </Col>
-        <Col className='fs-6 fw-bold'>
+        <Col className='fs-6 fw-bold text-break'>
           <p>Телефон:</p>
           <p>
             Тулаганов Абдукабил Абдунабиевич Заведующий кафедрой «ТСМИК»
@@ -29,15 +29,14 @@ const DetailContact = () => {
           </p>
         </Col>
       </Row>
-      <Row>
+      <Row >
         <Col xs='auto'>
           <EnvelopeFill className='text-primary' />
         </Col>
-        <Col className='fs-6 fw-bold'>
+        <Col xs className='fs-6 fw-bold text-break'>
           <p>Электронная почта:</p>
           <p>
-            Тулаганов Абдукабил Абдунабиевич Заведующий кафедрой «ТСМИК»
-            abdukabiltulaganov@gmail.com
+            Тулаганов Абдукабил Абдунабиевич Заведующий кафедрой «ТСМИК» abdukabiltulaganov@gmail.com
           </p>
         </Col>
       </Row>

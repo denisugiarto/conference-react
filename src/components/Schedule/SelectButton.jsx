@@ -14,7 +14,7 @@ const SelectButton = () => {
     },
   ];
   return (
-    <ToggleButtonGroup type='radio' name='options' defaultValue='1' className='mt-7'>
+    <ToggleButtonGroup type='radio' name='options' defaultValue='1'>
       {radios.map((radio, index) => (
         <ToggleButton
           key={index}

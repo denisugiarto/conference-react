@@ -15,8 +15,10 @@ const Schedule = () => {
   }, []);
   return (
     <Section className='bg-light' title='Программа мероприятий'>
-      <SelectButton />
-      <TableSchedule schedulesList={schedules} />
+      <div className='mt-3 mt-lg-6'>
+        <SelectButton />
+        <TableSchedule schedulesList={schedules} />
+      </div>
     </Section>
   );
 };

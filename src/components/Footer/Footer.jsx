@@ -4,8 +4,8 @@ import { Col, Container, Row } from 'react-bootstrap';
 const Footer = () => {
   return (
     <footer className='bg-green-400 text-white'>
-      <Container className='p-7'>
-        <Row className='gy-2 gx-5 fw-bold fs-8'>
+      <Container className='p-3 p-lg-7'>
+        <Row className='gy-4 gx-5 fw-bold fs-8'>
           <Col>
             <Row>
               <Col xs={12}>
@@ -28,7 +28,7 @@ const Footer = () => {
               </Col>
             </Row>
           </Col>
-          <Col>
+          <Col xs={12}>
             <h6 className='fs-6 fw-bold'>Адрес ТАСИ:</h6>
             <p>
               100084, г. Ташкент, ул. Кичик халка йули, 7, Ташкентский
@@ -43,6 +43,7 @@ const Footer = () => {
               style={{ border: 0 }}
               allowfullscreen=''
               loading='lazy'
+              className='img-fluid'
               referrerpolicy='no-referrer-when-downgrade'
             ></iframe>
           </Col>

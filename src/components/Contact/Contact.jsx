@@ -11,8 +11,8 @@ import DetailContact from './DetailContact';
 const Contact = () => {
   return (
     <Section title='Контакты'>
-      <Container>
-        <Row className='mt-1 gy-5 row-cols-1 row-cols-lg-2'>
+      <div className='mt-3 mt-lg-6'>
+        <Row className='gy-5 row-cols-1 row-cols-lg-2'>
           <Col>
             <DetailContact />
           </Col>
@@ -20,7 +20,7 @@ const Contact = () => {
             <ContactForm />
           </Col>
         </Row>
-      </Container>
+      </div>
     </Section>
   );
 };
