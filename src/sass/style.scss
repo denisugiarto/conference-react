@@ -1,9 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700&family=Lato:wght@100;300;400;700;900&display=swap');
-@import 'variables', 'utilities';
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700&family=Lato:wght@100;300;400;700;900&display=swap");
+@import "variables", "utilities";
 
-@import '/node_modules/bootstrap/scss/bootstrap.scss';
-
+@import "/node_modules/bootstrap/scss/bootstrap.scss";
 
 .font--heading {
-    font-family: "Alegreya", sans-serif;
+	font-family: "Alegreya", sans-serif;
+}
+
+.navbar-toggler:focus {
+	box-shadow: none;
 }

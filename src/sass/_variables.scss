@@ -35,20 +35,20 @@ $light: $gray-100;
 $dark: $gray-900;
 
 $theme-colors: (
-  'primary': $primary,
-  'secondary': $secondary,
-  'success': $success,
-  'info': $info,
-  'warning': $warning,
-  'danger': $danger,
-  'light': $light,
-  'dark': $dark,
+	"primary": $primary,
+	"secondary": $secondary,
+	"success": $success,
+	"info": $info,
+	"warning": $warning,
+	"danger": $danger,
+	"light": $light,
+	"dark": $dark,
 );
 
 // Add custom color map
 $custom-colors: (
-  'green-300': $green-300,
-  'green-400': $green-400,
+	"green-300": $green-300,
+	"green-400": $green-400,
 );
 
 // Merge the maps
@@ -56,11 +56,11 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 //Container
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
-  xxl: 1320px,
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px,
+	xxl: 1320px,
 );
 
 // Contrast
@@ -68,20 +68,20 @@ $min-contrast-ratio: 3.53;
 
 // Font
 $font-size-base: 1rem;
-$font-family-sans-serif: 'Lato', sans-serif;
+$font-family-sans-serif: "Lato", sans-serif;
 
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
 $font-sizes: (
-  1: $font-size-base * 3,
-  2: $font-size-base * 2,
-  3: $font-size-base * 1.75,
-  4: $font-size-base * 1.5,
-  5: $font-size-base * 1.25,
-  6: $font-size-base * 1.125,
-  7: $font-size-base,
-  8: $font-size-base * 0.875,
+	1: $font-size-base * 3,
+	2: $font-size-base * 2,
+	3: $font-size-base * 1.75,
+	4: $font-size-base * 1.5,
+	5: $font-size-base * 1.25,
+	6: $font-size-base * 1.125,
+	7: $font-size-base,
+	8: $font-size-base * 0.875,
 );
 
 //Paragraph
@@ -90,16 +90,18 @@ $paragraph-margin-bottom: 0;
 //Spacer
 $spacer: 1rem;
 $spacers: (
-  0: 0,
-  1: $spacer * 0.25,
-  2: $spacer * 0.5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 2,
-  6: $spacer * 3,
-  7: $spacer * 4.375,
+	0: 0,
+	1: $spacer * 0.25,
+	2: $spacer * 0.5,
+	3: $spacer,
+	4: $spacer * 1.5,
+	5: $spacer * 2,
+	6: $spacer * 3,
+	7: $spacer * 4.375,
 );
 
 //Table
 $table-accent-bg: rgba($white, 0.2);
 $table-striped-bg: rgba($primary, 0.2);
+
+//Navbar

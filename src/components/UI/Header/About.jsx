@@ -16,15 +16,9 @@ const About = () => {
 				</h2>
 			</div>
 
-			<div className='row justify-content-center d-flex'>
+			<div className='row row-cols-1 row-cols-lg-2 g-3'>
 				<div className='col'>
-					<div
-						style={{
-							height: "365px",
-							marginTop: "34px",
-							textAlign: "end",
-						}}
-					>
+					<p className='mt-lg-5  text-end'>
 						Уважаемые коллеги! Ташкентский архитектурно-строительный институт,
 						АССОЦИАЦИЯ «УЗПРОМСТРОЙМАТЕРИАЛЫ», ИП ООО КНАУФ Бухара Гипс,
 						Казанскии Государственный архитектурно-строительный университ
@@ -35,17 +29,13 @@ const About = () => {
 						85-летнему юбилею известного ученого в области строительного
 						материаловедения проф. КАСИМОВА ИРКИНА УМАРАЛИЕВИЧА, который
 						состоится 27-28 ноября 2020 в г. Ташкенте
-					</div>
+					</p>
 				</div>
 				<div className='col text-start'>
 					<img
+						className='img-fluid'
 						alt=' '
 						src={pict}
-						style={{
-							width: "570px",
-							height: "365px",
-							marginTop: "34px",
-						}}
 					/>
 				</div>
 			</div>

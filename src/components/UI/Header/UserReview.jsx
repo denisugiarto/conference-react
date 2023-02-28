@@ -95,12 +95,12 @@ const UserReview = () => {
 												height: "calc((100% - 100px) / 2)",
 											}}
 										>
-											<Card className='d-flex shadow cardfirst justify-content-start'>
+											<Card className='d-flex shadow cardfirst justify-content-start img-fluid'>
 												<Card.Body className='d-flex text-start'>
 													<div>
 														<Card.Img
+															className='photo'
 															src={item.image}
-															className='images'
 															alt=' '
 														/>
 													</div>
@@ -117,7 +117,6 @@ const UserReview = () => {
 															{item.first_name}&nbsp;{item.last_name}
 														</Card.Title>
 														<Card.Text
-															className='title'
 															style={{
 																fontFamily: "Lato",
 																fontWeight: "400",
