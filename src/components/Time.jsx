@@ -1,6 +1,6 @@
 import React from "react";
-import banner from "../../../../public/bannertwo.svg";
-import bannerr from "../../../../public/bannerthree.svg";
+import banner from "/bannertwo.svg";
+import bannerr from "/bannerthree.svg";
 
 import "./Time.scss";
 
