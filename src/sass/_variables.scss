@@ -70,6 +70,9 @@ $min-contrast-ratio: 3.53;
 $font-size-base: 1rem;
 $font-family-sans-serif: "Lato", sans-serif;
 
+//Navbar
+$navbar-toggler-focus-width: unset;
+
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -103,5 +106,3 @@ $spacers: (
 //Table
 $table-accent-bg: rgba($white, 0.2);
 $table-striped-bg: rgba($primary, 0.2);
-
-//Navbar
