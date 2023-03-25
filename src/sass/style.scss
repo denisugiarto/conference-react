@@ -4,9 +4,10 @@
 @import "/node_modules/bootstrap/scss/bootstrap.scss";
 
 .font--heading {
-	font-family: "Alegreya", sans-serif;
+  font-family: "Alegreya", sans-serif;
 }
 
 .navbar-toggler:focus {
-	box-shadow: none;
+  box-shadow: none;
+  border: none;
 }

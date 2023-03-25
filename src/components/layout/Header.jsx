@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { TfiClose } from "react-icons/tfi";
 
 const Header = () => {
   const listMenu = [
@@ -25,13 +27,28 @@ const Header = () => {
       name: "Статьи",
     },
   ];
+
+  const [click, setClick] = useState(false);
+  const handleClick = () => {
+    setClick(!click);
+  };
+
   return (
     <Navbar bg="light" expand="lg" sticky="top">
       <Container>
         <Navbar.Brand href="/" className="fw-bold fs-2">
           Лого
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
+        {/* toggler */}
+        <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleClick}>
+          {click ? (
+            <TfiClose size={27} className=" bg-transparent" />
+          ) : (
+            <GiHamburgerMenu size={27} className=" bg-transparent" />
+          )}
+        </Navbar.Toggle>
+
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             {listMenu.map((menu, index) => (
