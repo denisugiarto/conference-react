@@ -9,7 +9,7 @@ const Section = ({
   children,
 }) => {
   return (
-    <section className={`section px-3 py-6 p-lg-7 ${sectionClassName}`}>
+    <section className={`section py-6 p-lg-7 ${sectionClassName}`}>
       <Container>
         <h3
           className={`section-title text-success text-center fw-bold fs-2 fs-md-1 mb-3 mb-lg-5 ${titleClassName}`}
