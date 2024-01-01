@@ -1,45 +1,49 @@
-import React from "react";
-import banner from "/bannertwo.svg";
-import bannerr from "/bannerthree.svg";
-
-import "./Time.scss";
+import { useEffect, useState } from 'react';
+import { Col, Row } from 'react-bootstrap';
+import { useCountdown } from '../hooks/useCountDown';
+import './Time.scss';
+import Section from './UI/Section';
+import dayjs from 'dayjs';
 
 const Time = () => {
+  const [days, hours, minutes, seconds] = useCountdown(dayjs().add(10, 'day').add(6, 'hour').format('MM/DD/YYYY'));
+
 	return (
-		<>
-			<div
-				className='container-fluid'
-				style={{
-					backgroundImage: `url(${banner})`,
-					backgroundSize: "cover",
-					backgroundPosition: "center",
-					minHeight: "405px",
-					textAlign: "center",
-				}}
-			>
-				<div style={{ paddingTop: "70px" }}>
-					<span className='title font--heading'>
-						Симпозиум будет начата через
-					</span>
-					<div className='d-flex justify-content-center position-relative'>
-						<img
-							className='img-fluid m-5 m-lg-2 position-absolute pt-5'
-							alt=' '
-							src={bannerr}
-						/>
-						<span className='position-absolute  mt-1 pt-6 mt-lg-4 text-white fw-bold timer'>
-							59 : 11 : 58 : 59
-						</span>
-						<span className='row g-lg-7 gap-lg-5 position-absolute subtimer d-flex'>
-							<p className='col'>Дней</p>
-							<p className='col'>&nbsp;Часов</p>
-							<p className='col'>Минут</p>
-							<p className='col'>Секунд</p>
-						</span>
-					</div>
-				</div>
+		<Section title="Симпозиум будет начата через" sectionClassName="timeBg" titleClassName="text-white">
+			<div className="p-3 py-md-5 px-md-7" style={{ backgroundColor: 'rgba(196,196,196, 0.3)' }}>
+				<Row className="text-white text-center">
+					<Col>
+						<p className="fs-5 fs-md-2 fs-lg-1">{days}</p>
+						<p className="fs-7 fs-md-4">Дней</p>
+						{/* hari */}
+					</Col>
+					<Col>
+						<p className="fs-5 fs-md-2 fs-lg-1">:</p>
+					</Col>
+					<Col>
+						<p className="fs-5 fs-md-2 fs-lg-1">{hours}</p>
+						<p className="fs-7 fs-md-4">Часов</p>
+						{/* jam */}
+					</Col>
+					<Col>
+						<p className="fs-5 fs-md-2 fs-lg-1">:</p>
+					</Col>
+					<Col>
+						<p className="fs-5 fs-md-2 fs-lg-1">{minutes}</p>
+						<p className="fs-7 fs-md-4">Минут</p>
+						{/* menit */}
+					</Col>
+					<Col>
+						<p className="fs-5 fs-md-2 fs-lg-1">:</p>
+					</Col>
+					<Col>
+						<p className="fs-5 fs-md-2 fs-lg-1">{seconds}</p>
+						<p className="fs-7 fs-md-4">Секунд</p>
+						{/* second */}
+					</Col>
+				</Row>
 			</div>
-		</>
+		</Section>
 	);
 };
 
